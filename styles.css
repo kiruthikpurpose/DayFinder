@@ -6,6 +6,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    transition: background 0.5s ease;
 }
 
 .container {
@@ -14,11 +15,17 @@ body {
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     text-align: center;
+    transition: box-shadow 0.3s;
+}
+
+.container:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
 }
 
 h1 {
     margin-bottom: 1rem;
     color: #333;
+    font-size: 2rem;
 }
 
 .input-container {
@@ -59,4 +66,20 @@ button:hover {
     font-size: 1.5rem;
     color: #333;
     font-weight: bold;
+}
+
+.day-info {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: #555;
+    background-color: #f3f3f3;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease-in-out;
+}
+
+.day-info:hover {
+    transform: translateY(-5px);
+    background-color: #ffe5d3;
 }
